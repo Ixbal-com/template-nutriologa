@@ -11,10 +11,14 @@
 // esos resultados. El paso con data-wizard-results muestra el [data-wizard-result="id"]
 // con más puntos (empate: el primero en el HTML) y copia su data-result-name al campo
 // [data-wizard-choice], para que llegue al mensaje de WhatsApp.
+// Campos condicionales (opcional): un elemento con data-wizard-if="tipo=auto" solo se ve
+// cuando el campo de name "tipo" vale "auto" (varios valores con "|": "tipo=vida|hogar").
+// Mientras está oculto sus campos quedan desactivados: no se validan ni llegan al mensaje.
 // Registra initWizard antes de initWhatsappForm: así el envío de un paso intermedio no
 // abre WhatsApp.
 export function initWizard() {
   for (const form of document.querySelectorAll("[data-wizard]")) {
+    initConditions(form);
     const steps = [...form.querySelectorAll("[data-wizard-step]")];
     if (steps.length < 2) continue;
 
@@ -102,4 +106,22 @@ function recommend(form, step) {
 
   const choice = form.querySelector("[data-wizard-choice]");
   if (choice) choice.value = winner.dataset.resultName ?? winner.dataset.wizardResult;
+}
+
+function initConditions(form) {
+  const conditionals = [...form.querySelectorAll("[data-wizard-if]")];
+  if (!conditionals.length) return;
+
+  const apply = () => {
+    const data = new FormData(form);
+    for (const element of conditionals) {
+      const [name, values = ""] = element.dataset.wizardIf.split("=");
+      const matches = values.split("|").includes(String(data.get(name.trim()) ?? ""));
+      element.hidden = !matches;
+      for (const field of element.querySelectorAll("input, select, textarea")) field.disabled = !matches;
+    }
+  };
+
+  form.addEventListener("change", apply);
+  apply();
 }
