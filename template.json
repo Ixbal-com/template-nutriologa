@@ -3,6 +3,7 @@
   "name": "Nutrióloga / Consultorio de nutrición",
   "version": "1.0.0",
   "category": "salud",
+  "uses": ["citas"],
   "style": "Fresco y apetitoso: verde albahaca y durazno sobre crema, formas redondeadas; títulos en serif amable (Young Serif) y texto en Manrope.",
   "description": "Para nutriólogas, nutriólogos y consultorios de nutrición: un test de un minuto recomienda el plan ideal y lo manda por WhatsApp, con planes, recetas, consulta presencial y en línea.",
   "tags": [
