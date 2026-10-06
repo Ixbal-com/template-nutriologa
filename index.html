@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO: título y descripción que aparecen en Google -->
+  <title>Nutre · Nut. Daniela Ríos, nutrióloga en Puebla</title>
+  <meta name="description" content="Nutrióloga en Puebla con consulta presencial y en línea. Planes para bajar de peso sin rebote, controlar glucosa y colesterol o rendir más en el deporte. Haz el test y descubre tu plan.">
+  <meta name="theme-color" content="#2f6b4f">
+
+  <!-- Vista previa al compartir en WhatsApp y redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nutre · Nut. Daniela Ríos">
+  <meta property="og:description" content="Come rico, sin dietas de castigo. Consulta de nutrición en Puebla y en línea.">
+  <meta property="og:image" content="assets/img/og-image.svg">
+  <meta property="og:locale" content="es_MX">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Young+Serif&display=swap">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="module" src="assets/js/main.js"></script>
+
+  <!-- Datos estructurados para Google Maps y búsquedas locales -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dietitian",
+    "name": "Nutre · Nut. Daniela Ríos",
+    "description": "Consulta de nutrición presencial y en línea: pérdida de peso, nutrición clínica y deportiva.",
+    "telephone": "+52 222 418 3076",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Juárez 2915, consultorio 3, La Paz",
+      "addressLocality": "Puebla",
+      "addressRegion": "Puebla",
+      "postalCode": "72160",
+      "addressCountry": "MX"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ ENCABEZADO ============ -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Nutre, ir al inicio">
+        <img class="brand__logo" src="assets/img/logo.svg" alt="" width="40" height="40">
+        <span class="brand__name">Nutre <span class="brand__role">Nut. Daniela Ríos</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-nav-toggle>
+        <span class="visually-hidden">Abrir menú</span>
+        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#menu"></use></svg>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal" data-nav>
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#planes">Planes</a></li>
+          <li><a class="site-nav__link" href="#como-funciona">Cómo funciona</a></li>
+          <li><a class="site-nav__link" href="#recetas">Recetas</a></li>
+          <li><a class="site-nav__link" href="#resultados">Resultados</a></li>
+          <li><a class="site-nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="button button--primary button--sm" href="#test">Haz el test</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="status-badge" data-open-status hidden></p>
+          <p class="eyebrow">Nutrióloga en Puebla · presencial y en línea</p>
+          <h1 class="hero__title">Come rico, <em>sin dietas de castigo</em></h1>
+          <p class="hero__lead">Planes de alimentación con comida mexicana de verdad, hechos para tu rutina, tu salud y tu bolsillo. Sin productos milagro y sin pasar hambre.</p>
+          <div class="hero__actions">
+            <a class="button button--accent button--lg" href="#test">
+              Descubre tu plan en 1 minuto
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#arrow-right"></use></svg>
+            </a>
+            <a class="button button--ghost button--lg" href="https://wa.me/522224183076?text=Hola%20Daniela%2C%20quiero%20agendar%20una%20consulta" data-contact="whatsapp" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+              Escríbeme
+            </a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>9 años</strong> de consulta</li>
+            <li><strong>+1,200</strong> pacientes</li>
+            <li><strong>Cédula</strong> 10234567</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <figure class="media media--portrait hero__photo" data-slot="hero">
+            <img src="images/hero.jpg" alt="Daniela Ríos, nutrióloga, sonriendo en su consultorio con un frutero al lado" width="1024" height="1536" fetchpriority="high">
+          </figure>
+          <p class="hero__note" aria-hidden="true">
+            <span class="hero__note-label">En tu plan de hoy</span>
+            Bowl de quinoa con nopales y aguacate
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ¿TE IDENTIFICAS? ============ -->
+    <section class="concerns" aria-labelledby="identificas-titulo">
+      <div class="container concerns__inner">
+        <h2 class="concerns__title" id="identificas-titulo">¿Te suena familiar?</h2>
+        <ul class="concerns__list">
+          <li>Bajo de peso y lo vuelvo a subir</li>
+          <li>Como a deshoras por el trabajo</li>
+          <li>Me dijeron que tengo prediabetes</li>
+          <li>Quiero rendir más en el gym</li>
+          <li>Estoy embarazada o lactando</li>
+          <li>Ya no sé qué es sano y qué no</li>
+        </ul>
+        <p class="concerns__answer">Todo tiene solución, y empieza por un plan hecho para ti. <a href="#test">Haz el test →</a></p>
+      </div>
+    </section>
+
+    <!-- ============ TEST ============ -->
+    <!--
+      Test por pasos (assets/js/modules/wizard.js). Cada <fieldset data-wizard-step> es un paso.
+      data-points="equilibrio clinico" suma un punto a esos planes; el último paso muestra el
+      [data-wizard-result] con más puntos y lo copia al campo oculto "plan" del mensaje de WhatsApp.
+      Los ids de data-points deben coincidir con los data-wizard-result.
+    -->
+    <section class="section quiz" id="test" aria-labelledby="test-titulo">
+      <div class="container quiz__inner">
+        <header class="quiz__intro">
+          <p class="eyebrow">Test de 1 minuto</p>
+          <h2 class="section__title" id="test-titulo">¿Qué plan es <em>para ti</em>?</h2>
+          <p class="section__lead">Cuatro preguntas rápidas. Al final te digo qué plan te conviene y me lo mandas por WhatsApp para agendar.</p>
+        </header>
+
+        <form class="card quiz__card wizard form" data-wizard data-whatsapp-form data-message="Hola Daniela, soy {nombre}. Hice el test de tu página: mi objetivo es {objetivo}; diagnóstico: {diagnostico}; actividad: {actividad}. Me recomendó el {plan} y prefiero consulta {modalidad}.">
+          <div class="wizard__progress" data-wizard-nav hidden>
+            <span data-wizard-progress aria-live="polite">Paso 1 de 5</span>
+            <span class="wizard__bar" data-wizard-bar></span>
+          </div>
+
+          <fieldset class="wizard__step" data-wizard-step data-wizard-auto>
+            <legend class="wizard__question">¿Cuál es tu objetivo principal?</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="objetivo" value="bajar de peso sin rebote" data-points="equilibrio" required> Bajar de peso sin rebote</label>
+              <label class="option"><input type="radio" name="objetivo" value="controlar glucosa o colesterol" data-points="clinico"> Controlar glucosa, colesterol o presión</label>
+              <label class="option"><input type="radio" name="objetivo" value="ganar músculo y rendir más" data-points="deportivo"> Ganar músculo y rendir más</label>
+              <label class="option"><input type="radio" name="objetivo" value="comer mejor en familia" data-points="equilibrio"> Comer mejor en familia</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="wizard__step" data-wizard-step data-wizard-auto>
+            <legend class="wizard__question">¿Tienes algún diagnóstico médico?</legend>
+            <div class="options options--2">
+              <label class="option"><input type="radio" name="diagnostico" value="ninguno" required> Ninguno</label>
+              <label class="option"><input type="radio" name="diagnostico" value="prediabetes o diabetes" data-points="clinico"> Prediabetes o diabetes</label>
+              <label class="option"><input type="radio" name="diagnostico" value="colesterol o triglicéridos altos" data-points="clinico"> Colesterol o triglicéridos</label>
+              <label class="option"><input type="radio" name="diagnostico" value="SOP o tiroides" data-points="clinico"> SOP o tiroides</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="wizard__step" data-wizard-step data-wizard-auto>
+            <legend class="wizard__question">¿Cuántos días a la semana haces ejercicio?</legend>
+            <div class="options options--2">
+              <label class="option"><input type="radio" name="actividad" value="casi nada" data-points="equilibrio" required> Casi nada</label>
+              <label class="option"><input type="radio" name="actividad" value="1 o 2 días" data-points="equilibrio"> 1 o 2 días</label>
+              <label class="option"><input type="radio" name="actividad" value="3 o 4 días" data-points="deportivo"> 3 o 4 días</label>
+              <label class="option"><input type="radio" name="actividad" value="5 días o más" data-points="deportivo"> 5 días o más</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="wizard__step" data-wizard-step data-wizard-auto>
+            <legend class="wizard__question">¿Cómo prefieres tu consulta?</legend>
+            <div class="options options--2">
+              <label class="option"><input type="radio" name="modalidad" value="presencial en Puebla" required> Presencial en Puebla</label>
+              <label class="option"><input type="radio" name="modalidad" value="en línea" > En línea, desde donde estés</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="wizard__step" data-wizard-step data-wizard-results>
+            <legend class="wizard__question">Tu plan recomendado</legend>
+            <input type="hidden" name="plan" value="Plan Equilibrio" data-wizard-choice>
+
+            <article class="quiz-result" data-wizard-result="equilibrio" data-result-name="Plan Equilibrio">
+              <p class="quiz-result__name">Plan Equilibrio</p>
+              <p>Para bajar de peso a tu ritmo y aprender a comer sin contar cada caloría. Menú semanal con recetas fáciles y lista del súper.</p>
+            </article>
+            <article class="quiz-result" data-wizard-result="clinico" data-result-name="Plan Clínico">
+              <p class="quiz-result__name">Plan Clínico</p>
+              <p>Para controlar glucosa, colesterol, presión, SOP o tiroides junto con tu médico. Ajustamos tu plan con tus estudios de laboratorio.</p>
+            </article>
+            <article class="quiz-result" data-wizard-result="deportivo" data-result-name="Plan Deportivo">
+              <p class="quiz-result__name">Plan Deportivo</p>
+              <p>Para ganar músculo, recuperarte mejor y rendir en tu deporte, con horarios de comida alrededor de tus entrenamientos.</p>
+            </article>
+
+            <div class="form__field">
+              <label class="form__label" for="nombre">Tu nombre</label>
+              <input class="form__control" id="nombre" name="nombre" type="text" autocomplete="given-name" required>
+            </div>
+            <button class="button button--accent button--block button--lg" type="submit">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+              Agendar por WhatsApp
+            </button>
+            <p class="form__note">Se abrirá WhatsApp con tus respuestas listas para enviar. No se guarda nada en este sitio.</p>
+          </fieldset>
+
+          <div class="wizard__nav" data-wizard-nav hidden>
+            <button class="button button--ghost" type="button" data-wizard-back>← Atrás</button>
+            <button class="button button--primary" type="button" data-wizard-next>Siguiente →</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ PLANES ============ -->
+    <section class="section section--muted" id="planes" aria-labelledby="planes-titulo">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <p class="eyebrow">Planes</p>
+          <h2 class="section__title" id="planes-titulo">Precios claros, <em>sin paquetes forzosos</em></h2>
+          <p class="section__lead">Todos incluyen consulta de 60 minutos, medición de composición corporal y tu plan en 48 horas.</p>
+        </header>
+
+        <ul class="plans">
+          <li class="plan">
+            <h3 class="plan__name">Plan Equilibrio</h3>
+            <p class="plan__for">Bajar de peso y crear hábitos</p>
+            <p class="plan__price">$750 <small>por consulta</small></p>
+            <ul class="plan__list">
+              <li>Menú semanal con recetas</li>
+              <li>Lista del súper y del mercado</li>
+              <li>Seguimiento cada 15 días</li>
+            </ul>
+          </li>
+          <li class="plan plan--featured">
+            <p class="plan__badge">El más pedido</p>
+            <h3 class="plan__name">Plan Clínico</h3>
+            <p class="plan__for">Glucosa, colesterol, presión, SOP o tiroides</p>
+            <p class="plan__price">$900 <small>por consulta</small></p>
+            <ul class="plan__list">
+              <li>Revisión de tus estudios de laboratorio</li>
+              <li>Plan coordinado con tu médico</li>
+              <li>Dudas por WhatsApp entre consultas</li>
+            </ul>
+          </li>
+          <li class="plan">
+            <h3 class="plan__name">Plan Deportivo</h3>
+            <p class="plan__for">Ganar músculo y rendir más</p>
+            <p class="plan__price">$850 <small>por consulta</small></p>
+            <ul class="plan__list">
+              <li>Comidas alrededor de tus entrenamientos</li>
+              <li>Guía de suplementos (solo si hacen falta)</li>
+              <li>Ajustes según tu temporada</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="plans__note">¿Vienes con tu pareja o un familiar? La segunda consulta tiene 20 % de descuento.</p>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="section" id="como-funciona" aria-labelledby="como-titulo">
+      <div class="container process">
+        <div class="process__media">
+          <figure class="media process__photo" data-slot="consulta">
+            <img src="images/consulta.jpg" alt="Daniela revisando un plan de alimentación con una paciente en el consultorio" width="1536" height="1024" loading="lazy">
+          </figure>
+          <figure class="media media--square process__photo process__photo--small" data-slot="menu">
+            <img src="images/menu.jpg" alt="Plan de alimentación semanal impreso junto a fruta y verdura fresca" width="1024" height="1024" loading="lazy">
+          </figure>
+        </div>
+        <div>
+          <p class="eyebrow">Cómo funciona</p>
+          <h2 class="section__title" id="como-titulo">Cuatro pasos, <em>cero culpas</em></h2>
+          <ol class="process__steps">
+            <li>
+              <h3>Primera consulta</h3>
+              <p>Platicamos de tu historia, tu rutina y lo que te gusta comer. Medimos tu composición corporal.</p>
+            </li>
+            <li>
+              <h3>Tu plan en 48 horas</h3>
+              <p>Menú semanal con recetas, porciones fáciles de medir y lista del súper.</p>
+            </li>
+            <li>
+              <h3>Seguimiento cada 15 días</h3>
+              <p>Revisamos avances, ajustamos lo que no funcione y cambiamos recetas para que no te aburras.</p>
+            </li>
+            <li>
+              <h3>Acompañamiento por WhatsApp</h3>
+              <p>¿Una fiesta, un viaje o un antojo? Escríbeme y lo resolvemos juntos.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECETAS ============ -->
+    <section class="section section--green" id="recetas" aria-labelledby="recetas-titulo">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Así se ve comer bien</p>
+          <h2 class="section__title" id="recetas-titulo">Recetas de <em>mis planes</em></h2>
+          <p class="section__lead">Con ingredientes del mercado y en menos de 20 minutos. Nada de comprar cosas raras.</p>
+        </header>
+
+        <ul class="recipes">
+          <li class="recipe">
+            <figure class="media media--square" data-slot="receta-1">
+              <img src="images/receta-1.jpg" alt="Chilaquiles verdes horneados con pollo, aguacate y queso fresco" width="1024" height="1024" loading="lazy">
+            </figure>
+            <p class="recipe__tag">Desayuno</p>
+            <h3 class="recipe__name">Chilaquiles horneados con pollo</h3>
+            <p class="recipe__meta">15 min · 420 kcal</p>
+          </li>
+          <li class="recipe">
+            <figure class="media media--square" data-slot="receta-2">
+              <img src="images/receta-2.jpg" alt="Bowl de quinoa con nopales asados, aguacate, jitomate y frijoles" width="1024" height="1024" loading="lazy">
+            </figure>
+            <p class="recipe__tag">Comida</p>
+            <h3 class="recipe__name">Bowl de quinoa con nopales</h3>
+            <p class="recipe__meta">20 min · 510 kcal</p>
+          </li>
+          <li class="recipe">
+            <figure class="media media--square" data-slot="receta-3">
+              <img src="images/receta-3.jpg" alt="Tostadas de atún con pepino, cebolla morada y limón" width="1024" height="1024" loading="lazy">
+            </figure>
+            <p class="recipe__tag">Cena</p>
+            <h3 class="recipe__name">Tostadas de atún con pepino</h3>
+            <p class="recipe__meta">10 min · 350 kcal</p>
+          </li>
+          <li class="recipe">
+            <figure class="media media--square" data-slot="receta-4">
+              <img src="images/receta-4.jpg" alt="Vaso de agua de jamaica con chía y rodajas de limón" width="1024" height="1024" loading="lazy">
+            </figure>
+            <p class="recipe__tag">Bebida</p>
+            <h3 class="recipe__name">Agua de jamaica con chía</h3>
+            <p class="recipe__meta">5 min · sin azúcar</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-titulo">
+      <div class="container about">
+        <figure class="media media--portrait about__photo" data-slot="mercado">
+          <img src="images/mercado.jpg" alt="Daniela eligiendo verduras en un puesto del mercado" width="1024" height="1536" loading="lazy">
+        </figure>
+        <div class="about__content">
+          <p class="eyebrow">Sobre mí</p>
+          <h2 class="section__title" id="sobre-mi-titulo">Hola, soy <em>Daniela</em></h2>
+          <p>Soy poblana, amo el mole y no creo en las dietas que te quitan todo. Estudié Nutrición porque vi a mi papá batallar con la diabetes con planes imposibles de seguir.</p>
+          <p>Desde 2017 ayudo a personas ocupadas a comer mejor con lo que ya hay en su cocina. Mi meta es que algún día ya no me necesites.</p>
+          <ul class="credentials">
+            <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#check"></use></svg> Licenciada en Nutrición, BUAP · Cédula 10234567</li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#check"></use></svg> Educadora en diabetes certificada</li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#check"></use></svg> Diplomado en nutrición deportiva</li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#check"></use></svg> Miembro del Colegio Mexicano de Nutriólogos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRESENCIAL O EN LÍNEA ============ -->
+    <section class="section section--muted" aria-labelledby="modalidades-titulo">
+      <div class="container">
+        <header class="section__header section__header--center">
+          <p class="eyebrow">Modalidades</p>
+          <h2 class="section__title" id="modalidades-titulo">En el consultorio <em>o desde tu casa</em></h2>
+        </header>
+        <div class="modes">
+          <article class="mode">
+            <figure class="media" data-slot="consultorio">
+              <img src="images/consultorio.jpg" alt="Consultorio luminoso con escritorio, plantas y báscula de composición corporal" width="1536" height="1024" loading="lazy">
+            </figure>
+            <div class="mode__body">
+              <h3 class="mode__title"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#pin"></use></svg> Presencial en La Paz, Puebla</h3>
+              <p>Con medición de composición corporal en cada visita. Estacionamiento gratis.</p>
+            </div>
+          </article>
+          <article class="mode">
+            <figure class="media" data-slot="en-linea">
+              <img src="images/en-linea.jpg" alt="Daniela en videollamada con una paciente desde su laptop" width="1536" height="1024" loading="lazy">
+            </figure>
+            <div class="mode__body">
+              <h3 class="mode__title"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#video"></use></svg> En línea, desde donde estés</h3>
+              <p>Por videollamada. Te enseño a medirte en casa con una cinta y tu báscula.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESULTADOS ============ -->
+    <section class="section" id="resultados" aria-labelledby="resultados-titulo">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Resultados reales</p>
+          <h2 class="section__title" id="resultados-titulo">Lo que dicen <em>mis pacientes</em></h2>
+          <p class="rating-summary"><strong>4.9</strong> de 5 en Google · 180 opiniones</p>
+        </header>
+
+        <ul class="results">
+          <li class="result">
+            <p class="result__badge">−9 kg en 5 meses</p>
+            <blockquote class="result__quote">“Por primera vez bajé sin pasar hambre y sin dejar las tortillas. Ya llevo un año sin rebote.”</blockquote>
+            <p class="result__author">Mariana G. · Plan Equilibrio</p>
+          </li>
+          <li class="result">
+            <p class="result__badge">Glucosa en rango</p>
+            <blockquote class="result__quote">“Mi médico me bajó la dosis de metformina. Daniela me enseñó a armar mis platos sin complicarme.”</blockquote>
+            <p class="result__author">Jorge L. · Plan Clínico</p>
+          </li>
+          <li class="result">
+            <p class="result__badge">Primer medio maratón</p>
+            <blockquote class="result__quote">“Terminé mi primer medio maratón con energía. El plan de comidas antes de correr cambió todo.”</blockquote>
+            <p class="result__author">Fernanda R. · Plan Deportivo</p>
+          </li>
+        </ul>
+        <p class="results__note">Los resultados varían de persona a persona.</p>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS FRECUENTES ============ -->
+    <section class="section section--muted" id="preguntas" aria-labelledby="preguntas-titulo">
+      <div class="container container--narrow">
+        <header class="section__header section__header--center">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2 class="section__title" id="preguntas-titulo">Antes de tu primera consulta</h2>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary class="faq__question">¿Tengo que llevar algo?</summary>
+            <p class="faq__answer">Si tienes estudios de laboratorio recientes, tráelos. Ven con ropa cómoda y, de preferencia, sin haber hecho ejercicio ese día.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">¿Voy a tener que dejar las tortillas?</summary>
+            <p class="faq__answer">No. Tu plan incluye la comida que te gusta en porciones que te funcionen. Nada está prohibido.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">¿Atiendes a niñas, niños y adolescentes?</summary>
+            <p class="faq__answer">Sí, a partir de los 6 años y siempre con mamá, papá o tutor en la consulta.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">¿Puedo pagar con tarjeta? ¿Das factura?</summary>
+            <p class="faq__answer">Aceptamos efectivo, transferencia y tarjetas. Sí doy factura; pídela al agendar.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">¿Qué pasa si no puedo ir a mi cita?</summary>
+            <p class="faq__answer">Avísame con 24 horas de anticipación por WhatsApp y la cambiamos sin costo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO Y HORARIOS ============ -->
+    <section class="section" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow">Contacto</p>
+          <h2 class="section__title" id="contacto-titulo">Agenda <em>tu consulta</em></h2>
+          <p class="contact__lead">Escríbeme por WhatsApp o haz el test para que llegues con tu plan sugerido.</p>
+
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#pin"></use></svg>
+              <span>Av. Juárez 2915, consultorio 3, La Paz, Puebla, Pue.</span>
+            </li>
+            <li class="contact-list__item">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#phone"></use></svg>
+              <a href="tel:+522224183076" data-contact="phone">222 418 3076</a>
+            </li>
+            <li class="contact-list__item">
+              <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+              <a href="https://wa.me/522224183076?text=Hola%20Daniela%2C%20quiero%20agendar%20una%20consulta" data-contact="whatsapp" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+            </li>
+          </ul>
+
+          <!-- Horario: data-days usa 0 = domingo … 6 = sábado; horas en formato 24 h -->
+          <h3 class="contact__subtitle">Horario de consulta</h3>
+          <table class="hours" data-hours>
+            <tbody>
+              <tr data-days="1,2,3,4,5" data-open="09:00" data-close="19:00">
+                <th scope="row">Lunes a viernes</th>
+                <td>9:00 a 19:00</td>
+              </tr>
+              <tr data-days="6" data-open="09:00" data-close="13:00">
+                <th scope="row">Sábado</th>
+                <td>9:00 a 13:00</td>
+              </tr>
+              <tr data-days="0">
+                <th scope="row">Domingo</th>
+                <td>Cerrado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="contact__map">
+          <iframe
+            title="Ubicación del consultorio en el mapa"
+            src="https://www.google.com/maps?q=Av.+Ju%C3%A1rez+2915+La+Paz+Puebla&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE DE PÁGINA ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">Nutre</p>
+      <ul class="social-list">
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#instagram"></use></svg></a></li>
+        <li><a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#tiktok"></use></svg></a></li>
+        <li><a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#facebook"></use></svg></a></li>
+      </ul>
+      <p>© <span data-current-year>2026</span> Nutre · Nut. Daniela Ríos. Todos los derechos reservados.</p>
+      <p class="site-footer__legal">La información de este sitio es general y no sustituye una consulta. Si tienes un diagnóstico médico, sigue las indicaciones de tu médico.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/522224183076?text=Hola%20Daniela%2C%20quiero%20agendar%20una%20consulta" data-contact="whatsapp" target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+  </a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.modes {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 48rem) {
+  .modes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.mode {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.mode .media {
+  border-radius: 0;
+}
+
+.mode__body {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-6);
+}
+
+.mode__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-lg);
+}
+
+.mode__title .icon {
+  fill: var(--color-accent-strong);
+}
+
+.mode__body p {
+  color: var(--color-text-muted);
+}

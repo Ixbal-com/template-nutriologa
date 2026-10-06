@@ -1,0 +1,134 @@
+/* Hero sobre crema con retrato redondeado, una mancha de color detrás y una nota flotante. */
+.hero {
+  padding-block: var(--space-12) var(--space-section);
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: grid;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+@media (min-width: 56rem) {
+  .hero__inner {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: var(--space-16);
+  }
+}
+
+.hero__title {
+  font-size: var(--text-3xl);
+}
+
+.hero__title em {
+  display: block;
+  font-style: normal;
+  color: var(--color-primary);
+}
+
+.hero__lead {
+  max-width: 34rem;
+  margin-top: var(--space-6);
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.hero__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-8);
+  margin-top: var(--space-8);
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.hero__facts strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.hero__visual {
+  position: relative;
+  width: min(100%, 26rem);
+  margin-inline: auto;
+}
+
+/* Mancha orgánica detrás del retrato */
+.hero__visual::before {
+  content: "";
+  position: absolute;
+  inset: -8% -10% 6% 8%;
+  border-radius: 58% 42% 46% 54% / 48% 56% 44% 52%;
+  background: var(--color-accent-soft);
+}
+
+.hero__photo {
+  position: relative;
+  border-radius: 12rem 12rem var(--radius-lg) var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.hero__note {
+  position: absolute;
+  bottom: var(--space-8);
+  left: calc(var(--space-6) * -1);
+  display: grid;
+  gap: var(--space-1);
+  max-width: 14rem;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.hero__note-label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+@media (max-width: 30rem) {
+  .hero__note {
+    left: var(--space-2);
+  }
+}
+
+/* "Abierto ahora": lo muestra opening-hours.js según el horario de contacto */
+.status-badge {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.status-badge::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: var(--radius-full);
+  background: var(--color-danger);
+}
+
+.status-badge.is-open::before {
+  background: var(--color-whatsapp);
+}

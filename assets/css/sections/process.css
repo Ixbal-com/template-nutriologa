@@ -1,0 +1,71 @@
+.process {
+  display: grid;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+@media (min-width: 56rem) {
+  .process {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+  }
+}
+
+.process__media {
+  position: relative;
+  padding-bottom: var(--space-12);
+}
+
+.process__photo {
+  border-radius: var(--radius-lg);
+}
+
+.process__photo--small {
+  position: absolute;
+  right: calc(var(--space-4) * -1);
+  bottom: 0;
+  width: 42%;
+  border: 6px solid var(--color-background);
+  box-shadow: var(--shadow-md);
+}
+
+.process__steps {
+  display: grid;
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.process__steps li {
+  position: relative;
+  padding-left: var(--space-16);
+  counter-increment: step;
+}
+
+/* Número grande en círculo durazno */
+.process__steps li::before {
+  content: counter(step);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-soft);
+  color: var(--color-accent-strong);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+}
+
+.process__steps h3 {
+  font-size: var(--text-lg);
+}
+
+.process__steps p {
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+}

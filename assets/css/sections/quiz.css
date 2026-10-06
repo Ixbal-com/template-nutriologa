@@ -1,0 +1,43 @@
+/* Test por pasos: introducción a un lado y tarjeta del test al otro. */
+.quiz__inner {
+  display: grid;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+@media (min-width: 56rem) {
+  .quiz__inner {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+
+  .quiz__intro {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-8));
+  }
+}
+
+.quiz__card {
+  padding: clamp(var(--space-6), 4vw, var(--space-12));
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.quiz-result {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+}
+
+.quiz-result__name {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-accent-strong);
+}
+
+/* Sin JavaScript se ven los tres planes: los separa un poco */
+.quiz-result + .quiz-result {
+  margin-top: var(--space-2);
+}

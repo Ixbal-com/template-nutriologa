@@ -1,0 +1,40 @@
+/* Franja de "¿Te suena familiar?": frases cortas como etiquetas. */
+.concerns {
+  padding-block: var(--space-12);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.concerns__inner {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.concerns__title {
+  font-size: var(--text-xl);
+}
+
+.concerns__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.concerns__list li {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-on-primary-border);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.concerns__answer {
+  color: var(--color-on-primary-muted);
+}
+
+.concerns__answer a {
+  color: var(--color-highlight);
+  font-weight: 700;
+}
